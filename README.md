@@ -16,3 +16,7 @@ Após o build, é só rodar os testes
 ```bash
 make test
 ```
+
+## Testes
+
+Importante salientar que o boto não é mockável, até por segurança da AWS, etc. Para os testes na aplicação vamos mockar todos os resultados (para não escalar em custo também), e o ideal seria fazer o teste meio que na mão e ver resultado da AWS (enviando documentos reais, etc)
