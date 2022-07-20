@@ -1,0 +1,3 @@
+[run]
+omit =
+    ./alfred/dynamodb_create_tables.py

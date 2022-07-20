@@ -1,0 +1,13 @@
+name: pyrekognition
+
+on: pull_request
+
+jobs:
+  test:
+
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Test with Docker
+      run: |
+        docker-compose run app pytest $(path) -s --cov-report term-missing --cov-fail-under 100
