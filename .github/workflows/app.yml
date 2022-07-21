@@ -4,10 +4,12 @@ on: pull_request
 
 jobs:
   test:
-
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
     - name: Test with Docker
+      env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
       run: |
         docker-compose run app pytest $(path) -s --cov-report term-missing --cov-fail-under 100

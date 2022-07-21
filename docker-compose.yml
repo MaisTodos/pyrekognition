@@ -8,8 +8,8 @@ services:
     volumes:
       - ./:/var/task
     environment: &environment
-      - AWS_ACCESS_KEY_ID=aws_access_key
+      - AWS_ACCESS_KEY_ID=${AWS_ACCESS_KEY_ID}
       - AWS_DEFAULT_REGION=us-east-1
-      - AWS_SECRET_ACCESS_KEY=aws_access_secret
+      - AWS_SECRET_ACCESS_KEY=${AWS_SECRET_ACCESS_KEY}
     ports:
       - "8108:8108"
