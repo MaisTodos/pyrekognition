@@ -1,5 +1,6 @@
-import pytest
 from unittest.mock import patch
+
+import pytest
 
 from pyrekognition.helper import HelperBotoClient, KYCValidate
 
@@ -28,14 +29,14 @@ def test_detect_text():
 @pytest.mark.vcr
 def test_compare_faces():
     url_origin = "https://guiadocumentos.com.br/wp-content/uploads/2013/10/RIC-2010-F-310x165.jpg"  # noqa E501
-    url_targer = "https://gringo.com.vc/wp-content/uploads/2021/05/geral-CNH-867x1024.png"
+    url_targer = "https://gringo.com.vc/wp-content/uploads/2021/05/geral-CNH-867x1024.png"  # noqa E501
     response = HelperBotoClient().compare_faces(url_origin, url_targer)
     assert response is not None
 
 
 @pytest.mark.vcr
 def test_validate_id_cards_success():
-    url = "https://gringo.com.vc/wp-content/uploads/2021/05/geral-CNH-867x1024.png"
+    url = "https://gringo.com.vc/wp-content/uploads/2021/05/geral-CNH-867x1024.png"  # noqa E501
     validator = KYCValidate()
     response = validator.validate_id_cards(url)
 
@@ -44,7 +45,7 @@ def test_validate_id_cards_success():
 
 @pytest.mark.vcr
 def test_validate_id_cards_failed():
-    url = "https://images.emojiterra.com/google/noto-emoji/v2.034/512px/1f984.png"
+    url = "https://images.emojiterra.com/google/noto-emoji/v2.034/512px/1f984.png"  # noqa E501
     validator = KYCValidate()
     response = validator.validate_id_cards(url)
 
@@ -62,7 +63,7 @@ def test_validate_driver_license_success():
 
 @pytest.mark.vcr
 def test_validate_driver_license_failed():
-    url = "https://gringo.com.vc/wp-content/uploads/2021/05/geral-CNH-867x1024.png"
+    url = "https://gringo.com.vc/wp-content/uploads/2021/05/geral-CNH-867x1024.png"  # noqa E501
     validator = KYCValidate()
     response = validator.validate_driver_license(url)
 
@@ -72,7 +73,7 @@ def test_validate_driver_license_failed():
 @pytest.mark.vcr
 def test_validade_faces():
     url_origin = "https://pbs.twimg.com/profile_images/1226626761611456513/MMyVfrYT_400x400.jpg"  # noqa E501
-    url_targer = "https://img.a.transfermarkt.technology/portrait/big/3366-1489607001.jpg"
+    url_targer = "https://img.a.transfermarkt.technology/portrait/big/3366-1489607001.jpg"  # noqa E501
 
     validator = KYCValidate()
     assert validator.validade_faces(url_origin, url_targer) is True
@@ -81,7 +82,7 @@ def test_validade_faces():
 @pytest.mark.vcr
 def test_validade_faces_not_matched():
     url_origin = "https://pbs.twimg.com/profile_images/1226626761611456513/MMyVfrYT_400x400.jpg"  # noqa E501
-    url_targer = "https://gringo.com.vc/wp-content/uploads/2021/05/geral-CNH-867x1024.png"
+    url_targer = "https://gringo.com.vc/wp-content/uploads/2021/05/geral-CNH-867x1024.png"  # noqa E501
 
     validator = KYCValidate()
     assert validator.validade_faces(url_origin, url_targer) is False
@@ -89,7 +90,7 @@ def test_validade_faces_not_matched():
 
 @pytest.mark.vcr
 def test_extract_driver_license_data():
-    url = "https://gringo.com.vc/wp-content/uploads/2021/05/geral-CNH-867x1024.png"
+    url = "https://gringo.com.vc/wp-content/uploads/2021/05/geral-CNH-867x1024.png"  # noqa E501
     validator = KYCValidate()
     assert validator.validate_driver_license(url) is False
     data = validator.extract_driver_license_data(url)
@@ -98,7 +99,7 @@ def test_extract_driver_license_data():
 
 @pytest.mark.vcr
 def test_extract_driver_license_data_fake():
-    url = 'https://support-candidates.gupy.io/hc/article_attachments/4419319664283/cnh_fisica.png'
+    url = 'https://support-candidates.gupy.io/hc/article_attachments/4419319664283/cnh_fisica.png'  # noqa E501
     validator = KYCValidate()
     assert validator.validate_driver_license(url) is False
     data = validator.extract_driver_license_data(url)
