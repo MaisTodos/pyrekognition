@@ -91,15 +91,15 @@ def test_validade_faces_not_matched():
 def test_extract_driver_license_data():
     url = "https://gringo.com.vc/wp-content/uploads/2021/05/geral-CNH-867x1024.png"
     validator = KYCValidate()
-    print(validator.validate_driver_license(url))
+    assert validator.validate_driver_license(url) is False
     data = validator.extract_driver_license_data(url)
-    print(data)
+    assert isinstance(data, list)
 
 
 @pytest.mark.vcr
 def test_extract_driver_license_data_fake():
     url = 'https://support-candidates.gupy.io/hc/article_attachments/4419319664283/cnh_fisica.png'
     validator = KYCValidate()
-    print(validator.validate_driver_license(url))
+    assert validator.validate_driver_license(url) is False
     data = validator.extract_driver_license_data(url)
-    print(data)
+    assert isinstance(data, list)
