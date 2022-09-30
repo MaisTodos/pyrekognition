@@ -353,11 +353,11 @@ interactions:
       Accept-Ranges:
       - bytes
       Age:
-      - '265197'
+      - '93487'
       CF-Cache-Status:
       - HIT
       CF-RAY:
-      - 7320bba499274b41-GRU
+      - 752f849dbb0c4004-YYZ
       Cache-Control:
       - max-age=31536000
       Connection:
@@ -367,13 +367,11 @@ interactions:
       Content-Type:
       - image/jpeg
       Date:
-      - Thu, 28 Jul 2022 21:33:24 GMT
-      Expect-CT:
-      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      - Fri, 30 Sep 2022 19:55:46 GMT
       NEL:
       - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
       Report-To:
-      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=RwM7vp6InZix5BDZFGbaZUuXSOgSBKQQHIzz6u1%2FGPO6I1yUP3ivV86KUXuTcg4GV%2B1jv8YvJcmbPAp6fLIcJjIr8LJwKZUkqPKXHRHTHuZ%2Fo6CcObg%2F1zxbNcUkSGeB3saTNSs4CZc%3D"}],"group":"cf-nel","max_age":604800}'
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=E%2FGcEfH0SHbHLOnPDui8CXRCGykzcy%2BC2Hfqze5PdvlU8ZTFRnieAxRjOnNoTl3nk%2BOpWLTyIJUsAHTbYn3vohw4ft8Yu7Jf0ChBeTcJjJ7ib7XUaFKN0GwwJCc1MmWrTJNFbuW3NQo%3D"}],"group":"cf-nel","max_age":604800}'
       Server:
       - cloudflare
       Vary:
