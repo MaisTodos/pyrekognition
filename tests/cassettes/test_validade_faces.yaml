@@ -448,20 +448,20 @@ interactions:
     headers:
       Accept-Ranges:
       - bytes
-      Connection:
-      - keep-alive
+      Age:
+      - '54647'
       Content-Length:
       - '24482'
       Content-Type:
       - image/jpeg
       Date:
-      - Thu, 28 Jul 2022 21:33:41 GMT
+      - Fri, 30 Sep 2022 20:28:18 GMT
+      Server:
+      - ECS (spb/E4EB)
       Server-Timing:
-      - x-cache;desc=HIT, x-tw-cdn;desc=FT
+      - x-cache;desc= HIT,x-tw-cdn;desc=,edge;dur=1
       X-Cache:
-      - HIT, HIT
-      X-Content-Type-Options:
-      - nosniff
+      - HIT
       access-control-allow-origin:
       - '*'
       access-control-expose-headers:
@@ -470,14 +470,24 @@ interactions:
       - max-age=604800, must-revalidate
       last-modified:
       - Sun, 09 Feb 2020 21:57:44 GMT
+      perf:
+      - '7626143928'
       strict-transport-security:
       - max-age=631138519
+      surrogate-key:
+      - profile_images profile_images/bucket/3 profile_images/1226626761611456513
       timing-allow-origin:
       - https://twitter.com, https://mobile.twitter.com
-      x-served-by:
-      - cache-fty21345-FTY, cache-cgh11129-CGH, cache-tw-ZZZ1
+      x-connection-hash:
+      - abbf9c886397de4a8fd347ad043a7b2582f58956e917e0fea103a291a320483f
+      x-content-type-options:
+      - nosniff
+      x-response-time:
+      - '128'
+      x-transaction-id:
+      - 7e30533ef617317c
       x-tw-cdn:
-      - FT
+      - VZ
     status:
       code: 200
       message: OK
@@ -842,7 +852,7 @@ interactions:
       Accept-Ranges:
       - bytes
       Cache-Control:
-      - public, max-age=341815
+      - public, max-age=342950
       Connection:
       - keep-alive
       Content-Disposition:
@@ -852,11 +862,11 @@ interactions:
       Content-Type:
       - image/jpeg
       Date:
-      - Thu, 28 Jul 2022 21:33:41 GMT
+      - Fri, 30 Sep 2022 20:28:18 GMT
       ETag:
       - 993ea8aa374894dbc47190b0c8dd93de9a7f9b8ebaf14026cc9f5921efef13e2
       Expires:
-      - Mon, 01 Aug 2022 20:30:36 GMT
+      - Tue, 04 Oct 2022 19:44:08 GMT
     status:
       code: 200
       message: OK
@@ -866,10 +876,10 @@ interactions:
     headers:
       Authorization:
       - !!binary |
-        QVdTNC1ITUFDLVNIQTI1NiBDcmVkZW50aWFsPUFLSUFVSUFYWEszM09aTzZNQkJGLzIwMjIwNzI4
+        QVdTNC1ITUFDLVNIQTI1NiBDcmVkZW50aWFsPUFLSUFVSUFYWEszM09aTzZNQkJGLzIwMjIwOTMw
         L3VzLWVhc3QtMS9yZWtvZ25pdGlvbi9hd3M0X3JlcXVlc3QsIFNpZ25lZEhlYWRlcnM9Y29udGVu
-        dC10eXBlO2hvc3Q7eC1hbXotZGF0ZTt4LWFtei10YXJnZXQsIFNpZ25hdHVyZT1kMmE4YjhhZWIz
-        YjU0NTk2NGMwY2VjYzRhMTM3ZmQyN2RmMDJjNzA3OWEyN2M4M2RlMmUyZWI0Y2EwZjM4MGZi
+        dC10eXBlO2hvc3Q7eC1hbXotZGF0ZTt4LWFtei10YXJnZXQsIFNpZ25hdHVyZT00N2Y1MjI5YWU1
+        Y2ZiM2E0OGQ2MzM4ODQ2ODIxNzhjNzExYjE3MDYyMTUzOWYyNDc2MzJjOTdlNDJiOTA5ODQ1
       Content-Length:
       - '58580'
       Content-Type:
@@ -881,7 +891,7 @@ interactions:
         cmUvMS4yMy40Mg==
       X-Amz-Date:
       - !!binary |
-        MjAyMjA3MjhUMjEzMzQxWg==
+        MjAyMjA5MzBUMjAyODE4Wg==
       X-Amz-Target:
       - !!binary |
         UmVrb2duaXRpb25TZXJ2aWNlLkNvbXBhcmVGYWNlcw==
@@ -896,9 +906,9 @@ interactions:
       Content-Type:
       - application/x-amz-json-1.1
       Date:
-      - Thu, 28 Jul 2022 21:33:42 GMT
+      - Fri, 30 Sep 2022 20:28:19 GMT
       x-amzn-RequestId:
-      - f4c6043f-a962-456b-b858-8b74c184c2f9
+      - 451003d8-e72e-440c-8543-91689e9c41f7
     status:
       code: 200
       message: OK

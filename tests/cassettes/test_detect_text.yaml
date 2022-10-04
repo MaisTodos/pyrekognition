@@ -353,11 +353,11 @@ interactions:
       Accept-Ranges:
       - bytes
       Age:
-      - '914502'
+      - '93488'
       CF-Cache-Status:
       - HIT
       CF-RAY:
-      - 7320bdcb7b41a526-GRU
+      - 752f84a4eaf03fd8-YYZ
       Cache-Control:
       - max-age=31536000
       Connection:
@@ -367,13 +367,11 @@ interactions:
       Content-Type:
       - image/jpeg
       Date:
-      - Thu, 28 Jul 2022 21:34:52 GMT
-      Expect-CT:
-      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      - Fri, 30 Sep 2022 19:55:47 GMT
       NEL:
       - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
       Report-To:
-      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=P2%2BoC0KZm6ZYgJAdJrQuLXkg8AdDlikqT%2B%2FejbXbssAaBN6FdPUjhhM7yntlpzef3JnKN%2BnLkpmxx9vgiydKGPHSdPhwiTWFJoRBQ7ro2kT5rHTRsnI9XwHc7FguoEsFYKgdRqK3omA%3D"}],"group":"cf-nel","max_age":604800}'
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=omv%2BP0YsiOXYQ6%2Bd02EuFBZzSkbLrz8Ecu1jXdEfmU3NhUOrOEAJcCrAj4wx%2B%2Bkpbz5G0YkxaBExfIuMBesMltSowJ4loGOWO7PbGLx0FFMRDX5iMtnGNIEplf9C3NFbqLThrzQUg8k%3D"}],"group":"cf-nel","max_age":604800}'
       Server:
       - cloudflare
       Vary:
@@ -392,10 +390,10 @@ interactions:
     headers:
       Authorization:
       - !!binary |
-        QVdTNC1ITUFDLVNIQTI1NiBDcmVkZW50aWFsPUFLSUFVSUFYWEszM09aTzZNQkJGLzIwMjIwNzI4
+        QVdTNC1ITUFDLVNIQTI1NiBDcmVkZW50aWFsPUFLSUFVSUFYWEszM09aTzZNQkJGLzIwMjIwOTMw
         L3VzLWVhc3QtMS9yZWtvZ25pdGlvbi9hd3M0X3JlcXVlc3QsIFNpZ25lZEhlYWRlcnM9Y29udGVu
-        dC10eXBlO2hvc3Q7eC1hbXotZGF0ZTt4LWFtei10YXJnZXQsIFNpZ25hdHVyZT1lNTllZGQ3MTI4
-        ODhmMGE5NGNhYmRkNzM0YzA5OWE0MjQyNjRjMTVkODU4NTI3ZGE1Yjc5MTlmNzc2MjBhMTAz
+        dC10eXBlO2hvc3Q7eC1hbXotZGF0ZTt4LWFtei10YXJnZXQsIFNpZ25hdHVyZT0zOWRmNzU4MWQ1
+        NGVhNThmZTFlM2I0M2U1NWFkN2RiYzNlNGIzZTFjMDAwN2U0ODUwMDRjNjU1NjA2MWMzNTZk
       Content-Length:
       - '25368'
       Content-Type:
@@ -407,7 +405,7 @@ interactions:
         cmUvMS4yMy40Mg==
       X-Amz-Date:
       - !!binary |
-        MjAyMjA3MjhUMjEzNDUyWg==
+        MjAyMjA5MzBUMTk1NTQ3Wg==
       X-Amz-Target:
       - !!binary |
         UmVrb2duaXRpb25TZXJ2aWNlLkRldGVjdFRleHQ=
@@ -434,9 +432,9 @@ interactions:
       Content-Type:
       - application/x-amz-json-1.1
       Date:
-      - Thu, 28 Jul 2022 21:34:54 GMT
+      - Fri, 30 Sep 2022 19:55:48 GMT
       x-amzn-RequestId:
-      - b95feec0-145b-48dd-9ba8-4ced07683cbd
+      - 0efdfc3f-d6f0-4bd9-b26a-d20dc0145c16
     status:
       code: 200
       message: OK
