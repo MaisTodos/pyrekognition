@@ -38,10 +38,13 @@ class KYCValidate(HelperBotoClient):
         response = self.detect_labels(image, min_confidence)
         return label_name in [label["Name"] for label in response["Labels"]]
 
-    def extract_driver_license_data(self, image):
+    def extract_image_data(self, image):
         return [
             item["DetectedText"] for item in self.detect_text(image)["TextDetections"]
         ]
+
+    def extract_driver_license_data(self, image):
+        return self.extract_image_data(image)
 
     def validate_id_cards(self, image, min_confidence=95):
         return self.validate_label_in_document(image, "Id Cards", min_confidence)
